@@ -1,5 +1,24 @@
 # Javascript
 
+Operators
+```javascript
+// math
+a % b // modulus
+a *= b // a = a * b
+
+// comparation
+=== // equal value and equal type
+== // equal
+!= // not equals
+! // NOT
+```
+
+Expressions
+```javascript
+typeof value // return type. Type and value 'undefined', means not assigned
+
+( a == b ? value_if_true : value_if_else ) // conditional
+```
 
 Classes
 ```javascript
@@ -61,7 +80,7 @@ array_1d.forEach( function( item ){ /* logic here */ } )
 var array_2d = [ [1, 2, 3]
                , [1, 2, 3] ];
 var w = 3,
-h = 3;
+h = 2;
 for( var i = 0; i < w ; i++ ){
   var column = array_2d[ i ];
   for( var j = 0; j < h ; j++ ){
@@ -92,4 +111,12 @@ Math.random()
 
 // radians to degrees
 var degrees = radians * ( 180 / Math.PI );
+
+// function: angle to [x, y]
+return [ Math.cos( radians ) * magnitude, Math.sin( radians ) *  magnitude ];
+
+// function: (x, y) to angle
+var radians = Math.atan( x / y );
+var degrees = radians * ( 180 / Math.PI );
+return ( degrees < 0 ? 360 - degrees : degrees );
 ```
