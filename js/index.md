@@ -15,9 +15,16 @@ a *= b // a = a * b
 
 Expressions
 ```javascript
-typeof value // return type. Type and value 'undefined', means not assigned
+typeof value; // return type.
 
-( a == b ? value_if_true : value_if_else ) // conditional
+( a == b ? value_if_true : value_if_else ); // conditional
+
+// optional args
+function optional_param( param ){
+  return typeof param === 'undefined';
+}
+optional_param(2); // return false
+optional_param(); // return true
 ```
 
 Classes
@@ -33,7 +40,7 @@ function Func(){
   return a;
 }
 
-or
+// or
 
 function Func(){
 }
@@ -107,7 +114,7 @@ parseInt( number );
 Math.sqrt( Math.pow(x1 - x2 , 2) + Math.pow( y1 - y2, 2 ) );
 
 // random number between 0 and 1(?)
-Math.random()
+Math.random();
 
 // radians to degrees
 var degrees = radians * ( 180 / Math.PI );
