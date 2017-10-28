@@ -16,7 +16,7 @@ git
   ```
   where -u references to 'upstream'
 
-  update a local repository from "origin" link to remote repository
+  example of update a local repository from "origin" link from remote repository
   ```
-  git pull
+  git pull [origin master]
   ```
