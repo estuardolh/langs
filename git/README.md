@@ -20,3 +20,14 @@ git
   ```
   git pull [origin master]
   ```
+
+  set credentials
+  ```
+  git config --global user.name "username"
+  git config --global user.email "mail"
+  ```
+  get credentials
+  ```
+  git config user.name
+  git config user.email
+  ```
